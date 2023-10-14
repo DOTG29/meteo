@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
     <link rel="icon" type="image/svg+xml" href="/vite.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- link css here only when ccs is not imported in js yet -->
-    <!-- <link rel="stylesheet" href="/css/style.css"> -->
+    <link rel="stylesheet" href="style.css">
     <title>Hello</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <!-- <script src="./js/app.js" type="module"></script> -->
+    <h1>Météo</h1>
+
+    <form>
+      <label for="searchCity">Ville:</label>
+      <input type="text" name="text" placeholder="Search for a city" id="searchCity" autocomplete="off">
+      <button id="submit">Submit</button>
+    </form>
+
+    <h2>Country: <span id="country"></span></h2>
+    <h2>City: <span id="city"></span></h2>
+
+    <main></main>
+    <script src="app.js" type="module"></script>
   </body>
 </html>
